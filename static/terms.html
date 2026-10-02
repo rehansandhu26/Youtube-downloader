@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  
+  <title>Terms of Use | TubeLoad - YouTube Video Downloader</title>
+  <meta name="title" content="Terms of Use | TubeLoad - YouTube Video Downloader">
+  <meta name="description" content="Terms of Use and Conditions for TubeLoad, an online YouTube video downloading utility.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FF0000">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              red: '#FF0000',
+              darkred: '#CC0000',
+              bg: '#0F0F0F',
+              secondary: '#181818',
+              softwhite: '#F8FAFC',
+              gray: '#A1A1AA',
+              border: '#27272A',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Firebase SDK Initialization -->
+  <script type="module" src="/js/firebase-init.js"></script>
+</head>
+<body class="bg-brand-bg text-brand-softwhite font-sans antialiased min-h-screen flex flex-col selection:bg-brand-red selection:text-white">
+
+  <!-- Sticky Navbar -->
+  <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-brand-bg/90 border-b border-brand-border/80 transition-all duration-300">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="/" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-red rounded-xl">
+        <div class="w-10 h-10 rounded-2xl bg-brand-red flex items-center justify-center shadow-lg shadow-brand-red/30 group-hover:scale-105 transition-transform duration-200">
+          <svg class="w-5 h-5 text-white fill-white ml-0.5" viewBox="0 0 24 24">
+            <path d="M5 3l14 9-14 9V3z"/>
+          </svg>
+        </div>
+        <span class="font-display font-extrabold text-xl tracking-tight text-white">
+          Tube<span class="text-brand-red">Load</span>
+        </span>
+      </a>
+
+      <div class="flex items-center gap-3">
+        <!-- Firebase Security Badge -->
+        <div class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium bg-brand-secondary/90 border border-brand-border shadow-sm">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+            <path d="M4.5 17.5L8.2 3.2c.16-.62.98-.78 1.36-.26l3.6 4.88 2.4-4.44c.31-.57 1.12-.58 1.45-.02l5.49 9.5-18 4.64z" fill="#FFA000"/>
+            <path d="M13.2 15.1l-2.4-4.7c-.31-.6-1.18-.6-1.5 0L3.5 20.2l9.7-5.1z" fill="#F57C00"/>
+            <path d="M21.5 17.5L16.2 3.8c-.23-.59-.99-.74-1.42-.28L3.5 20.2l8.7 4.8c.6.3 1.3.3 1.9 0l7.4-7.5z" fill="#FFCA28"/>
+          </svg>
+          <span class="text-brand-gray text-[11px]">Protected by <strong class="text-white font-semibold">Firebase Security</strong></span>
+        </div>
+
+        <!-- Home Action -->
+        <a href="/" class="px-4 py-2 rounded-xl bg-brand-secondary hover:bg-brand-border text-xs font-semibold text-brand-softwhite border border-brand-border transition-colors flex items-center gap-2">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5 text-brand-red"></i>
+          <span>Back to Downloader</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Legal Content -->
+  <main class="relative z-10 flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+
+    <!-- Header Section -->
+    <div class="border-b border-brand-border pb-8 mb-10">
+      <span class="text-xs font-mono font-semibold uppercase tracking-wider text-brand-red">Legal Documentation</span>
+      <h1 class="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mt-2">
+        Terms of Use
+      </h1>
+      <p class="text-xs sm:text-sm text-brand-gray mt-3">
+        Last updated: October 1, 2026 &bull; Effective immediately
+      </p>
+    </div>
+
+    <!-- Article Content -->
+    <article class="space-y-8 text-sm sm:text-base text-brand-gray leading-relaxed">
+
+      <!-- Section 1 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">1</span>
+          Acceptance of Terms
+        </h2>
+        <p>
+          By accessing or using <strong class="text-white">TubeLoad</strong> (the "Service", "Website", "we", "us", or "our"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to all of these Terms, you must not access or use the Website.
+        </p>
+        <p class="mt-2.5">
+          We reserve the right to revise or update these Terms at any time without prior notice. Continued use of the Service following any modifications constitutes your acknowledgment and acceptance of the revised Terms.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">2</span>
+          Description of the Service
+        </h2>
+        <p>
+          TubeLoad operates strictly as a technical intermediary tool that enables users to fetch and download publicly accessible media from supported video hosting platforms. 
+        </p>
+        <p class="mt-2.5">
+          TubeLoad does not host, store, index, or archive any copyrighted videos, audio files, or media on permanent public databases. Any processing or format conversion is initiated solely upon the direct request of the user. Temporary files generated during conversion are automatically and permanently purged from server memory within a limited timeframe.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">3</span>
+          Permitted Use &amp; User Responsibilities
+        </h2>
+        <p>
+          TubeLoad is provided for <strong class="text-white">personal, non-commercial, educational, and backup purposes only</strong>. You agree to use the Service in full compliance with all applicable local, national, and international laws, regulations, and third-party rights.
+        </p>
+        <p class="mt-2.5">
+          When submitting any URL to TubeLoad, you represent and warrant that:
+        </p>
+        <ul class="list-disc list-inside mt-2 space-y-1.5 pl-2 text-slate-300">
+          <li>You own the copyright to the content, or</li>
+          <li>You have received express authorization or license from the legitimate copyright holder, or</li>
+          <li>The content is published under an open public license (such as Creative Commons or Public Domain), or</li>
+          <li>Your use qualifies as an established statutory exemption (such as fair use or fair dealing) under applicable copyright legislation.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">4</span>
+          Prohibited Activities
+        </h2>
+        <p>You strictly agree <strong class="text-white">NOT</strong> to:</p>
+        <ul class="list-disc list-inside mt-2.5 space-y-2 pl-2 text-slate-300">
+          <li>Download, duplicate, redistribute, broadcast, or commercially exploit any content without explicit permission from the rights holder.</li>
+          <li>Circumvent, decrypt, disable, or tamper with any digital rights management (DRM) technologies (including Widevine, FairPlay, or PlayReady encryption).</li>
+          <li>Use automated scripts, bots, spiders, or scrapers to access the Service or overload its server infrastructure.</li>
+          <li>Transmit any viruses, malware, trojans, or malicious code through the Service.</li>
+          <li>Attempt to process private videos, password-protected media, or content requiring unauthorized account credentials.</li>
+        </ul>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">5</span>
+          Intellectual Property &amp; Third-Party Trademarks
+        </h2>
+        <p>
+          TubeLoad is an independent third-party utility. <strong class="text-white">YouTube, the YouTube logo, and Google are registered trademarks of Google LLC.</strong>
+        </p>
+        <p class="mt-2.5">
+          TubeLoad is not affiliated with, endorsed by, sponsored by, or associated in any way with YouTube, Google LLC, Alphabet Inc., or any of their subsidiaries. Reference to third-party trademarks or brand names on this Website is solely for descriptive and informational identification purposes.
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">6</span>
+          Disclaimer of Warranties
+        </h2>
+        <p>
+          THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+        </p>
+        <p class="mt-2.5">
+          WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, TIMELY, OR SECURE, OR THAT IT WILL FUNCTION WITH EVERY VIDEO FORMAT OR HOSTING PLATFORM.
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">7</span>
+          Limitation of Liability
+        </h2>
+        <p>
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, TUBELOAD, ITS DEVELOPERS, OPERATORS, AND AFFILIATES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR REPUTATION ARISING FROM YOUR USE OF OR INABILITY TO USE THE SERVICE, OR ANY COPYRIGHT INFRINGEMENTS COMMITTED BY USERS OF THE SERVICE.
+        </p>
+        <p class="mt-2.5">
+          YOU ASSUME FULL LEGAL RESPONSIBILITY FOR ANY DATA, MEDIA, OR CONTENT ACCESSED OR DOWNLOADED USING THIS TOOL.
+        </p>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">8</span>
+          DMCA &amp; Copyright Infringement Notice
+        </h2>
+        <p>
+          TubeLoad respects the intellectual property rights of content creators. If you are a copyright owner or an agent thereof and believe that your copyrighted work is being unlawfully processed or utilized through our Website, please send a written takedown notice containing:
+        </p>
+        <ul class="list-disc list-inside mt-2 space-y-1.5 pl-2 text-slate-300">
+          <li>Identification of the copyrighted work claimed to have been infringed.</li>
+          <li>Identification of the material or URL claimed to be infringing.</li>
+          <li>Your contact information (including name, address, telephone number, and email).</li>
+          <li>A statement that you have a good faith belief that the disputed use is not authorized by the copyright owner.</li>
+          <li>A statement made under penalty of perjury that the information provided in the notice is accurate.</li>
+        </ul>
+        <p class="mt-2.5">
+          Upon receiving a verified notice, we will promptly evaluate the request and block access to the specified content.
+        </p>
+      </section>
+
+      <!-- Section 9 -->
+      <section class="p-6 rounded-2xl bg-brand-secondary/60 border border-brand-border/80">
+        <h2 class="font-display text-lg sm:text-xl font-bold text-white mb-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 rounded-lg bg-brand-red/20 text-brand-red text-xs font-bold flex items-center justify-center">9</span>
+          Contact Information
+        </h2>
+        <p>
+          If you have any questions, inquiries, or legal concerns regarding these Terms of Use, please contact us at:
+        </p>
+        <div class="mt-3 p-3.5 rounded-xl bg-brand-bg border border-brand-border font-mono text-xs text-brand-softwhite inline-block">
+          legal@tubeload.local &bull; support@tubeload.local
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-brand-border bg-brand-bg pt-10 pb-8 text-xs text-brand-gray">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-6 h-6 rounded-lg bg-brand-red flex items-center justify-center text-white">
+            <svg class="w-3.5 h-3.5 fill-white ml-0.5" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg>
+          </div>
+          <span class="font-display font-extrabold text-sm tracking-tight text-white">
+            Tube<span class="text-brand-red">Load</span>
+          </span>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="/" class="hover:text-white transition-colors">Downloader Home</a>
+          <a href="/terms.html" class="text-white font-semibold">Terms of Use</a>
+          <a href="/#faq" class="hover:text-white transition-colors">FAQ</a>
+        </div>
+      </div>
+
+      <!-- Firebase Security Trust Bar in Footer -->
+      <div class="mt-6 py-4 border-t border-brand-border/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-brand-gray text-[11px]">
+        <div class="flex items-center gap-2">
+          <svg class="w-4 h-4" viewBox="0 0 24 24"><path d="M4.5 17.5L8.2 3.2c.16-.62.98-.78 1.36-.26l3.6 4.88 2.4-4.44c.31-.57 1.12-.58 1.45-.02l5.49 9.5-18 4.64z" fill="#FFA000"/><path d="M13.2 15.1l-2.4-4.7c-.31-.6-1.18-.6-1.5 0L3.5 20.2l9.7-5.1z" fill="#F57C00"/><path d="M21.5 17.5L16.2 3.8c-.23-.59-.99-.74-1.42-.28L3.5 20.2l8.7 4.8c.6.3 1.3.3 1.9 0l7.4-7.5z" fill="#FFCA28"/></svg>
+          <span class="text-white font-medium">Google Firebase Security Verified</span>
+          <span class="text-brand-border">&bull;</span>
+          <span>App Check Enabled</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center gap-1 text-emerald-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Google Cloud Security
+          </span>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-brand-border/40 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-brand-gray">
+        <p>&copy; 2026 TubeLoad. All rights reserved.</p>
+        <p>TubeLoad is not affiliated with YouTube or Google.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

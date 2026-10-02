@@ -1,0 +1,42 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+*.mp4
+*.mp3
+*.webm
+*.m4a
+*.part
+*.ytdl
+
+# Environment variables & secrets
+.env
+.env.local
+*.log
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cloudflare tunnel caches
+.cloudflared/
